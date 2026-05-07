@@ -1,0 +1,10 @@
+[project]
+name = "automatic-email-sender"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "msal>=1.36.0",
+    "python-dotenv>=1.2.2",
+]
