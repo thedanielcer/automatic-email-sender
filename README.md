@@ -71,25 +71,6 @@ If the email is accepted by Microsoft Graph, the program prints:
 Email sent successfully
 ```
 
-## Scheduled Job
-
-`run_email_job.sh` is a convenience wrapper intended for cron or another
-scheduler. It:
-
-- changes into this project directory
-- runs `uv run main.py`
-- appends output to `log.txt`
-- sends a success or failure notification to the configured ntfy topic
-
-Run it manually with:
-
-```bash
-./run_email_job.sh
-```
-
-If you move the project or install `uv` somewhere else, update `BASE_DIR` and
-`UV_BIN` inside `run_email_job.sh`.
-
 ## Project Structure
 
 - `main.py` loads environment variables, gets an access token, builds the email,
